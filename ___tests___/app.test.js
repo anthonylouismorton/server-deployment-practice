@@ -10,7 +10,7 @@ const request = supertest(app);
 describe('Testing my Express Server', () => {
 
   it('Should respond with a string on POST / talk', async () => {
-    let param = 'hello there';
+    let param = 'hellothere';
 
     let response = await request.post('/talk').send({
       words: param,
